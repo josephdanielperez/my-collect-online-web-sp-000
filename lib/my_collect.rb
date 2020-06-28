@@ -1,6 +1,9 @@
 def my_collect(array)
+  new_array = []
+  i = 0
   array.collect do |language|
-    language.upcase
+    new_array << language.upcase
+    i += 1
   end
-  return array
+  return new_array
 end
